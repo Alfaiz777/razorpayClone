@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorpay</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;700&family=Dancing+Script&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="mx-0 bg-[#f4f8ff]">
+    <!-- nav bar -->
+    <nav class="bg-[#f4f8ff] fixed top-0 left-0 w-full z-50 ">
+        <div class="max-w-[1090px] mx-auto flex items-center justify-between py-1">
+
+
+            <!-- logo -->
+            <a href="/" class="cursor-pointer px-5">
+                <img src="./images/razorpay-icon.png" alt="logo-img" width="128px" height="50px" />
+            </a>
+
+            <!-- creating list items-->
+            <ul class="flex space-x-6">
+                <li
+                    class="text-gray-800 font-mullish py-1 hover:text-lightblue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Payments</a>
+                    <div
+                        class="absolute bottom-0 w-full h-1 bg-lightblue hidden group-hover:block transition-all duration-200">
+                    </div>
+                </li>
+
+                <li
+                    class="text-gray-800 font-mullish py-1 hover:text-lightblue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Banking+</a>
+                    <div
+                        class="absolute bottom-0 w-full h-1 bg-lightblue hidden group-hover:block transition-all duration-200">
+                    </div>
+                </li>
+
+                <li
+                    class="text-gray-800 font-mullish py-1 hover:text-lightblue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Payroll</a>
+                    <div
+                        class="absolute bottom-0 w-full h-1 bg-lightblue hidden group-hover:block transition-all duration-200">
+                    </div>
+                </li>
+
+                <li
+                    class="text-gray-800 font-mullish py-1 hover:text-lightblue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Engage</a>
+                    <div
+                        class="absolute bottom-0 w-full h-1 bg-lightblue hidden group-hover:block transition-all duration-200">
+                    </div>
+                </li>
+
+                <li
+                    class="text-gray-800 font-mullish py-1 hover:text-lightblue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Partners</a>
+                    <div
+                        class="absolute bottom-0 w-full h-1 bg-lightblue hidden group-hover:block transition-all duration-200">
+                    </div>
+                </li>
+
+                <li
+                    class="text-gray-800 font-mullish py-1 hover:text-lightblue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Resources</a>
+                    <div
+                        class="absolute bottom-0 w-full h-1 bg-lightblue hidden group-hover:block transition-all duration-200">
+                    </div>
+                </li>
+
+                <li
+                    class="text-gray-800 font-mullish py-1 hover:text-lightblue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Pricing</a>
+                    <div
+                        class="absolute bottom-0 w-full h-1 bg-lightblue hidden group-hover:block transition-all duration-200">
+                    </div>
+                </li>
+            </ul>
+
+            <!--Right side-->
+            <div class="flex items-center gap-7 ml-16">
+                <i
+                    class="fas fa-headset text-gray-600 text-xl cursor-pointer hover:text-lightblue transition-all duration-200 "></i>
+
+                <div
+                    class="flex items-center gap-x-1 cursor-pointer hover:text-lightblue transition-all duration-200 group">
+                    <img src="./images/india-flag-icon.png" alt="india-flag" width="28px" height="20px">
+                    <i
+                        class="fas fa-chevron-down text-gray-600 text-sm transition-all duration-300 group-hover:rotate-180 group-hover:text-lightblue"></i>
+                </div>
+
+
+                <button
+                    class="border px-4 py-2 rounded-md  border-lightblue500 text-lightblue500 font-mullish font-bold transition-all duration-200 hover:bg-blue-50">Login</button>
+
+                <button
+                    class="border px-5 py-2 rounded-md bg-lightblue500 text-white font-bold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-1 whitespace-nowrap">Sign
+                    Up
+                    <i class="fas fa-arrow-right text-sm"></i>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="hero-carousel relative">
+        <!-- Left Button -->
+        <button id="carousel-left"
+            class="absolute left-[180px] top-[58%] -translate-y-1/2 z-50 bg-white rounded-full shadow p-3 flex items-center justify-center">
+            <i class="fas fa-chevron-left text-blue-500"></i>
+        </button>
+
+        <section class=" hero-slide  block bg-[#f4f8ff] pt-32 ">
+            <div class="max-w-[1090px] mx-auto flex items-center justify-between px-5">
+
+                <!-- left column -->
+                <div class="max-w-[600px]">
+                    <h1 class="text-[#2b84ea] font-bold text-[40px]">Easy In-Store Payments</h1>
+
+                    <h1 class="text-gray-900 font-bold text-[40px]">for India's boldest disruptors</h1>
+
+                    <p class="text-gray-500 text-base mt-4">Quick Payments | Seamless Integration | Top-tier UPI stack
+                    </p>
+
+                    <div class="flex items-center gap-5 mt-5">
+                        <button
+                            class="border px-5 py-2 rounded-md bg-lightblue500 text-white font-bold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer">Sign
+                            Up Now
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </button>
+
+                        <a href="#" class="text-lightblue500 font-bold cursor-pointer">Know More</a>
+                    </div>
+                </div>
+
+                <!-- right column -->
+                <div class="relative">
+                    <img src="./images/shape.png" alt="blue shape" class="top-0  left-[17px] w-[400px] h-[420px]" />
+                    <img src="./images/sagar.png" alt="person"
+                        class=" absolute w-[330px] h-[370px] top-[50px] right-[260px] z-10" />
+
+                    <div class="absolute top-[66px] left-[120px] w-[200px] h-[354px] overflow-hidden shadow-lg"
+                        style="clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);">
+                        <div class="w-full h-full bg-blue-700 flex flex-col">
+                            <div class="py-5 bg-purple-100 h-[85px]">
+                                <h3 class="text-lg font-bold text-blue-900 text-center">Razorpay POS</h3>
+                                <div class="flex gap-1 justify-center items-center">
+                                    <p class="text-[8.6px] text-deepBlue">POWERS</p>
+                                    <img src="./images/wow-momo-logo.png" alt="logo"
+                                        class="h-auto w-auto max-h-4 max-w-[80px] object-contain">
+                                </div>
+                            </div>
+                            <img src="./images/qrimg.png" alt="POS device"
+                                class="w-full object-contain flex-1 bg-blue-700" />
+                            <div class="bg-blue-700 flex gap-1 px-8 py-5">
+                                <i class="fas fa-arrow-up rotate-[-45deg] text-white text-xs"></i>
+                                <p class="text-white text-[10px] font-semibold">WOW! MOMO FOUNDER</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" hero-slide  hidden bg-[#f4f8ff] pt-32 ">
+            <div class="max-w-[1090px] mx-auto flex items-center justify-between px-5">
+
+                <!-- left column -->
+                <div class="max-w-[600px]">
+                    <h1 class="text-[#2b84ea] font-bold text-[40px]">Advanced Payments Solutions</h1>
+
+                    <h1 class="text-gray-900 font-bold text-[40px]">for India's boldest disruptors</h1>
+
+                    <p class="text-gray-500 text-base mt-4">Quick Payments | Seamless Integration | Top-tier UPI stack
+                    </p>
+
+                    <div class="flex items-center gap-5 mt-5">
+                        <button
+                            class="border px-5 py-2 rounded-md bg-lightblue500 text-white font-bold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer">Sign
+                            Up Now
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </button>
+
+                        <a href="#" class="text-lightblue500 font-bold cursor-pointer">Know More</a>
+                    </div>
+                </div>
+
+                <!-- right column -->
+                <div class="relative">
+                    <img src="./images/shape.png" alt="blue shape" class="top-0  left-[17px] w-[400px] h-[420px]" />
+                    <img src="./images/ghazal.png" alt="person"
+                        class=" absolute w-[300px] h-[400px] top-[20px] right-[260px] z-10" />
+
+                    <div class="absolute top-[66px] left-[120px] w-[200px] h-[354px] overflow-hidden shadow-lg"
+                        style="clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);">
+                        <div class="w-full h-full bg-blue-700 flex flex-col">
+                            <div class="py-5 bg-[#D4ED97] h-[85px] flex flex-col justify-center items-center">
+                                <h3 class="text-lg font-bold text-blue-900 text-center">Payments</h3>
+                                <div class="flex gap-1 justify-center items-center">
+                                    <p class="text-[8.6px] text-deepBlue">POWERS</p>
+                                    <img src="./images/mamaearth-logo.png" alt="logo"
+                                        class="h-auto w-auto max-h-[25px] max-w-[80px] object-contain">
+                                </div>
+                            </div>
+
+                            <!-- White Card Section with Overlapping Product Image (EXACT MATCH) -->
+                            <div class="bg-[#1D4ED8] flex justify-center items-center px-4 py-5 relative">
+                                <div class="bg-[#eff1ed] w-[220px] relative pt-3 pb-0 px-0 overflow-visible">
+                                    <!-- Product Info -->
+                                    <div class="px-2 pb-2">
+                                        <div class="text-gray-700 text-[10px] font-bold">Body Lotion</div>
+                                        <div class="text-blue-900 text-[10px] font-bold">₹ 455</div>
+                                    </div>
+                                    <!-- Product Image (overlapping, behind payment methods) -->
+                                    <img src="./images/body_lotion_product.png" alt="Body Lotion"
+                                        class="absolute left-[70px] -top-[55px] w-[110px] h-[170px] object-contain" />
+                                    <!-- Payment Methods (overlappg bottom, in front of image) -->
+                                    <div class="bg-white h-[45px] w-full px-3 py-1 relative z-20 -mt-0">
+                                        <div class="text-[12px] text-gray-700 font-bold text-left py-3 z-10">Select
+                                            Payment
+                                            Method</div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 border-t border-gray-200">
+                                        <p
+                                            class="flex items-center gap-1 p-2 bg-white text-gray-700 text-[10px] w-full">
+                                            <i class="fas fa-credit-card"></i> Card
+                                        </p>
+                                        <p
+                                            class="flex items-center gap-1 p-2 bg-green-50 text-[#009E5C] font-bold text-[10px] w-full border border-[#009E5C] z-10">
+                                            <i class="fas fa-bolt"></i> UPI ID
+                                        </p>
+                                        <p
+                                            class="flex items-center gap-1 p-2 bg-white text-gray-700 text-[10px] w-full">
+                                            <i class="fas fa-university"></i> Netbanking
+                                        </p>
+                                        <p
+                                            class="flex items-center gap-1 p-2 bg-white text-gray-700 text-[10px] w-full">
+                                            <i class="fas fa-money-check-alt"></i> EMI
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="bg-blue-700 flex gap-1 px-8 py-5">
+                                <i class="fas fa-arrow-up rotate-[-45deg] text-white text-xs"></i>
+                                <p class="text-white text-[10px] font-semibold">MAMAEARTH FOUNDER</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" hero-slide  hidden bg-[#f4f8ff] pt-32 ">
+            <div class="max-w-[1090px] mx-auto flex items-center justify-between px-5">
+
+                <!-- left column -->
+                <div class="max-w-[600px]">
+                    <h1 class="text-[#2b84ea] font-bold text-[40px]">Automated Payroll</h1>
+
+                    <h1 class="text-gray-900 font-bold text-[40px]">for India's boldest disruptors</h1>
+
+                    <p class="text-gray-500 text-base mt-4">Automated Payroll & Compliances | Built for Startups &
+                        Enterprises
+                    </p>
+
+                    <div class="flex items-center gap-5 mt-5">
+                        <button
+                            class="border px-5 py-2 rounded-md bg-lightblue500 text-white font-bold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer">Sign
+                            Up Now
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </button>
+
+                        <a href="#" class="text-lightblue500 font-bold cursor-pointer">Know More</a>
+                    </div>
+                </div>
+
+                <!-- right column -->
+                <div class="relative">
+                    <img src="./images/shape.png" alt="blue shape" class="top-0  left-[17px] w-[400px] h-[420px]" />
+                    <img src="./images/Manish.png" alt="person"
+                        class=" absolute w-[310px] h-[410px] top-[10px] right-[260px] z-10" />
+
+                    <div class="absolute top-[66px] left-[120px] w-[200px] h-[354px] overflow-hidden shadow-lg"
+                        style="clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);">
+                        <div class="w-full h-full bg-blue-700 flex flex-col">
+                            <div class="py-5 bg-[#D4EDF6] h-[85px]">
+                                <h3 class="text-lg font-bold text-[#2B4255] text-center">Payroll Solution</h3>
+                                <div class="flex gap-1 justify-center items-center">
+                                    <p class="text-[8.6px] text-[#6A7B8A]">POWERS</p>
+                                    <img src="./images/purplle-beauty-logo.png" alt="logo"
+                                        class="h-auto w-auto max-h-5 max-w-[90px] object-contain">
+                                </div>
+                            </div>
+
+                            <div class="bg-[#1D4ED8] flex justify-center items-center px-6 py-5">
+                                <div class="bg-white w-[220px] h-[155px] px-1 py-3">
+                                    <div
+                                        class="flex justify-center items-center gap-3 border rounded-[40px] bg-gray-100 px-3 py-2">
+                                        <i class="fas fa-paper-plane text-xs text-green-400"></i>
+                                        <p class="text-xs font-semibold text-gray-900"> Run Payroll </p>
+                                    </div>
+
+                                    <div
+                                        class="flex justify-start items-center gap-3 border-b border-gray-200 pl-[40px] py-2  ">
+                                        <i class="fas fa-file-alt text-xs text-green-400"></i>
+                                        <p class="text-xs font-semibold text-gray-900"> Payslips </p>
+                                    </div>
+
+                                    <div
+                                        class="flex justify-start items-center gap-3  border-b border-gray-200 pl-[40px] px-3 py-2">
+                                        <i class="fas fa-bars text-xs text-green-400"></i>
+                                        <p class="text-xs font-semibold text-gray-900"> Compliance </p>
+                                    </div>
+
+                                    <div
+                                        class="flex justify-start items-center gap-3  border-b border-gray-200 pl-[40px] px-3 py-2">
+                                        <i class="fas fa-undo text-xs text-green-400"></i>
+                                        <p class="text-xs font-semibold text-gray-900"> Reimbursements </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-blue-700 flex gap-1 px-8 py-4">
+                                <i class="fas fa-arrow-up rotate-[-45deg] text-white text-xs"></i>
+                                <p class="text-white text-[10px] font-semibold">PURPLLE FOUNDER</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" hero-slide  hidden bg-[#f4f8ff] pt-32 ">
+            <div class="max-w-[1090px] mx-auto flex items-center justify-between px-5">
+
+                <!-- left column -->
+                <div class="max-w-[600px]">
+                    <h1 class="text-[#2b84ea] font-bold text-[40px]">Effortless Banking</h1>
+
+                    <h1 class="text-gray-900 font-bold text-[40px]">for India's boldest disruptors</h1>
+
+                    <p class="text-gray-500 text-base mt-4">Powerful Automation | Smart Dashboard | Integrated Access
+                    </p>
+
+                    <div class="flex items-center gap-5 mt-5">
+                        <button
+                            class="border px-5 py-2 rounded-md bg-lightblue500 text-white font-bold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer">Sign
+                            Up Now
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </button>
+
+                        <a href="#" class="text-lightblue500 font-bold cursor-pointer">Know More</a>
+                    </div>
+                </div>
+
+                <!-- right column -->
+                <div class="relative">
+                    <img src="./images/shape.png" alt="blue shape" class="top-0  left-[17px] w-[400px] h-[420px]" />
+                    <img src="./images/Abhishek.png" alt="person"
+                        class=" absolute w-[310px] h-[410px] top-[10px] right-[260px] z-10" />
+
+                    <div class="absolute top-[66px] left-[120px] w-[200px] h-[354px] overflow-hidden shadow-lg"
+                        style="clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 0 100%);">
+                        <div class="w-full h-full bg-blue-700 flex flex-col">
+                            <div class="py-5 bg-[#D4EDF6] h-[85px]">
+                                <h3 class="text-lg font-bold text-[#2B4255] text-center">Current Account</h3>
+                                <div class="flex gap-1 justify-center items-center">
+                                    <p class="text-[8.6px] text-[#6A7B8A]">POWERS</p>
+                                    <img src="./images/mygate logo.png" alt="logo"
+                                        class="h-auto w-auto max-h-4 max-w-[90px] object-contain">
+                                </div>
+                            </div>
+
+                            <div class="bg-[#1D4ED8] flex justify-center items-center px-6 py-4">
+                                <div class="bg-white w-[220px] h-[160px] px-4 py-2  flex flex-col gap-1">
+
+                                    <p class="text-[9px] text-gray-600 font-semibold">Current Account<b> Insights</b>
+                                    </p>
+
+                                    <div class="flex items-center">
+                                        <img src="./images/linegraph.png" alt="chart"
+                                            class="w-[150px] h-[54px] border rounded-lg object-cover shadow-2xl">
+                                    </div>
+
+                                    <p class="text-[9px] text-gray-600 font-semibold">Account<b> Statements</b>
+                                    </p>
+
+                                    <div class="flex flex-col gap-1 w-full h-full">
+                                        <div
+                                            class="flex border rounded-[40px] bg-gray-200 px-2 py-1 w-full h-full gap-3">
+                                            <div
+                                                class="border border-gray-400 w-[13px] h-[13px] rounded-full bg-gray-400">
+                                            </div>
+
+                                            <div class="flex flex-col justify-center">
+                                                <div class="h-[2px] w-[20px] rounded-full bg-gray-400 mb-1"></div>
+                                                <div class="h-[2px] w-[10px] rounded-full bg-gray-400"></div>
+                                            </div>
+
+
+                                            <p class="text-[9px] font-bold text-gray-700"> ₹10000</p>
+                                        </div>
+
+                                        <div
+                                            class="flex border rounded-[40px] bg-gray-200 px-2 py-1 w-full h-full gap-3">
+
+                                            <div
+                                                class="border border-gray-400 w-[13px] h-[13px] rounded-full bg-gray-400">
+                                            </div>
+
+                                            <div class="flex flex-col justify-center">
+                                                <div class="h-[2px] w-[20px] rounded-full bg-gray-400 mb-1"></div>
+                                                <div class="h-[2px] w-[10px] rounded-full bg-gray-400"></div>
+                                            </div>
+
+                                            <p class="text-[9px] font-bold text-gray-700"> ₹10000</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="bg-blue-700 flex gap-1 px-8 py-4">
+                                <i class="fas fa-arrow-up rotate-[-45deg] text-white text-xs"></i>
+                                <p class="text-white text-[10px] font-semibold">MYGATE FOUNDER</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Button -->
+        <button id="carousel-right"
+            class="absolute right-[180px] top-[58%] -translate-y-1/2 z-50 bg-white rounded-full shadow p-3 flex items-center justify-center">
+            <i class="fas fa-chevron-right text-lightblue500"></i>
+        </button>
+
+
+    </div>
+
+    <!-- mini hero section -->
+    <div
+        class=" relative max-w-[1090px] rounded-md h-[55px] mx-auto bg-white shadow-sm px-2 py-9 flex gap-[93px] justify-center items-center">
+
+        <!-- blue accent line -->
+        <div class="absolute left-0 top-0 h-full w-[4px] bg-blue-500 rounded-l-md"></div>
+
+        <!-- left side -->
+        <div class="flex gap-2 items-center">
+            <i class="fas fa-compass"></i>
+            <p class="text-gray-900">I'm here to</p>
+            <a href="#" class="text-[13px] border rounded-lg px-2 py-1 bg-gray-200 font-semibold text-gray-700">Accept
+                Payments</a>
+            <a href="#" class="text-[13px] border rounded-lg px-2 py-1 bg-gray-200 font-semibold text-gray-700">Make
+                Payments</a>
+            <a href="#" class="text-[13px] border rounded-lg px-2 py-1 bg-gray-200 font-semibold text-gray-700">Start
+                Business Banking</a>
+            <a href="#" class="text-[13px] border rounded-lg px-2 py-1 bg-gray-200 font-semibold text-gray-700">Get
+                Credit Loans</a>
+            <a href="#" class="text-[13px] border rounded-lg px-2 py-1 bg-gray-200 font-semibold text-gray-700">Automate
+                Payroll</a>
+        </div>
+
+
+
+        <!-- right side -->
+        <a href="#" class="text-gray-400 text-xs font-semibold">//Find the best product for your business</a>
+
+
+
+    </div>
+
+    <!-- horizontal moving brand logos bar -->
+    <div class="w-full bg-[#f4f8ff] py-6 overflow-hidden cursor-pointer">
+
+        <!-- Shadow Left -->
+        <div class="absolute left-0 top-0 h-full w-44 bg-gradient-to-r from-[#f5f8ff] to-transparent z-10"></div>
+
+        <!-- Shadow Right -->
+        <div class="absolute right-0 top-0 h-full w-44 bg-gradient-to-l from-[#f5f8ff] to-transparent z-10"></div>
+
+
+        <div class="whitespace-nowrap animate-marquee flex gap-16 group">
+            <img src="./images/ather-energy-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/bmw-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/bookmyshow-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/curefit-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/goibibo-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/nykaa-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/paisabazaar-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/swiggy-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/unacademy-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/urban-company-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/zerodha-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/wow-momo-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/mamaearth-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <!-- repaeat -->
+            <img src="./images/ather-energy-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/bmw-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/bookmyshow-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/curefit-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/goibibo-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/nykaa-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/paisabazaar-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/swiggy-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/unacademy-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/urban-company-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/zerodha-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/wow-momo-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+            <img src="./images/mamaearth-logo.png" alt="logo"
+                class="h-24 inline-block filter grayscale group-hover:grayscale-0 transition duration-300">
+        </div>
+
+    </div>
+
+    <!-- all founders image section -->
+    <div class="py-8">
+        <div class="max-w-[1090px] mx-auto bg-[#305EFF] h-[300px] flex">
+            <!-- left section-->
+            <div class="w-1/2 flex flex-col justify-between px-3 py-4 relative overflow-hidden">
+                <!-- Top-right triangle cut -->
+                <div class="absolute top-0 right-0 w-8 h-8 bg-[#f4f8ff]"
+                    style="clip-path: polygon(100% 0, 0 0, 100% 100%);"></div>
+                <!-- Bottom-left triangle cut -->
+                <div class="absolute bottom-0 left-0 w-8 h-8 bg-[#f4f8ff]"
+                    style="clip-path: polygon(0 100%, 0 0, 100% 100%);"></div>
+                <div>
+                    <h1 class="text-[56px] leading-[1] font-bebas text-[#C6FFB7]">CELEBRATING</h1>
+                    <div class="flex items-end gap-2">
+                        <span class="text-[32px] font-script text-[#C6FFB7]">the</span>
+                        <span class="text-[40px] font-bebas text-white">BOLDEST OF INDIA</span>
+                    </div>
+                    <hr class="border-t border-[#C6FFB7] my-4 w-[274px]">
+                </div>
+                <div class="flex gap-[47px]">
+                    <p class="text-[#C6FFB7] text-[13px]">Bold ambition. Relentless grit.</p>
+                    <a href="#" class="text-white text-lg underline font-semibold">Explore</a>
+                </div>
+            </div>
+
+            <!-- right section -->
+            <div class="w-[110%] py-3 px-5">
+                <img src="./images/allfoundersimage.png" alt="founder" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+
+    <!-- some text part -->
+    <div class="py-8">
+        <div class="max-w-[1090px] mx-auto bg-[#F8FAFC] flex flex-col gap-3 py-5">
+            <h1 class="text-[50px] font-inter font-semibold leading-[1] ">The all in one <span
+                    class="text-[#009E5C]">finance platform</span></h1>
+            <h1 class="text-[50px] font-inter font-semibold leading-[1]">you've been looking for</h1>
+            <div class="flex gap-5 items-center">
+                <p class="text-[#40566D] text-[15px]">With Razorpay, you can :</p>
+                <span class="text-[15px] text-[#40566D]"> | </span>
+                <a href="#" class="text-[16px] font-semibold text-[#192839]">Accept
+                    Payments</a>
+                <a href="#" class="text-[16px] font-semibold text-[#192839]">Make
+                    Payments</a>
+                <a href="#" class="text-[16px] font-semibold text-[#192839]">Start
+                    Business Banking</a>
+                <a href="#" class="text-[16px] font-semibold text-[#192839]">Get
+                    Credit Loans</a>
+                <a href="#" class="text-[16px] font-semibold text-[#192839]">Automate
+                    Payroll</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Soultions section-->
+    <div class=" py-[80px] bg-white">
+        <div class="max-w-[1090px] mx-auto h-auto bg-white relative">
+
+            <div class="w-full flex items-center justify-between">
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-[50px] text-[#192839] font-inter font-semibold leading-[1] mb-2">Powering Every
+                        Industry.</h1>
+                    <h1 class="text-[50px] text-[#192839] font-inter font-semibold leading-[1]">Powering All Disruptors.
+                    </h1>
+                </div>
+                <!-- right: icons -->
+                <div id="industry-icons-wrapper" class="overflow-hidden h-[60px] w-[400px] flex justify-end">
+                    <div id="industry-icons" class="flex gap-12 transition-all duration-500 ease-in-out">
+                        <i class="fa-solid fa-graduation-cap text-2xl text-[#223250]"></i>
+                        <i class="fa-regular fa-message text-2xl text-[#223250]"></i>
+                        <i class="fa-solid fa-briefcase-medical text-2xl text-[#223250]"></i>
+                        <i class="fa-regular fa-file-code text-2xl text-[#223250]"></i>
+                        <i class="fa-solid fa-lock text-2xl text-[#223250]"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-5 mt-16">
+                <a href="#" class="tab-btn text-[#192839] font-semibold border-b-2 border-[#009E5C]"
+                    data-tab="ecommerce">E-Commerce</a>
+                <a href="#" class="tab-btn text-[#768EA7] font-semibold" data-tab="education">Education</a>
+                <a href="#" class="tab-btn text-[#768EA7] font-semibold" data-tab="bfsi">BFSI</a>
+                <a href="#" class="tab-btn text-[#768EA7] font-semibold" data-tab="saas">SaaS</a>
+                <a href="#" class="tab-btn text-[#768EA7] font-semibold" data-tab="freelancers">FreeLancer</a>
+            </div>
+            <hr class="border-t-2 border-gray-200 w-[100%] mt-2">
+
+            <div class="tab-content" data-tab="ecommerce">
+                <img src="./images/ecommerce.png" alt="ecommerce" class="w-[100%] h-[100%] object-cover mt-10" />
+
+
+                <div class="absolute top-[300px] left-10 bg-white rounded-md shadow-lg p-7 w-[517px] z-10">
+
+                    <h1 class="text-[30px] text-[#192839] font-mullish font-semibold leading-[1] mb-2">Empower your</h1>
+                    <h1 class="text-[30px] text-[#009E5C] font-mullish font-semibold leading-[1]">e-commerce business
+                    </h1>
+
+                    <p class="text-[#40566D] text-[16px] mt-3">Streamline payment management with a unified dashboard,
+                        enabling both online and in-person payment collection while enhancing conversion rates and
+                        minimizing fraud.</p>
+
+                    <div class="flex items-center gap-2 mt-4">
+                        <img src="./images/nykaa-logo.png" alt="logo" class="w-[70px] h-[70px] filter grayscale">
+                        <img src="./images/decathlon.png" alt="logo" class="w-[90px] h-[20px] filter grayscale">
+                        <img src="./images/zomato.png" alt="logo" class="w-[90px] h-[24px] filter grayscale">
+                        <img src="./images/flipkart.png" alt="logo" class="w-[90px] h-[40px] filter grayscale">
+                        <p class="text-xs font-semibold text-[#40566D]">+70000 others</p>
+                    </div>
+
+                    <button
+                        class="border px-5 py-2 rounded-md bg-blue-600 text-white font-semibold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer mt-3">See
+                        Solutions
+                        <i class="fas fa-arrow-right text-sm"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="tab-content hidden" data-tab="education">
+                <img src="./images/education.png" alt="ecommerce" class="w-[100%] h-[100%] object-cover mt-10" />
+
+
+                <div class="absolute top-[300px] left-10 bg-white rounded-md shadow-lg p-7 w-[517px] z-10">
+
+                    <h1 class="text-[30px] text-[#192839] font-mullish font-semibold leading-[1] mb-2">Payments for your
+                    </h1>
+                    <h1 class="text-[30px] text-[#009E5C] font-mullish font-semibold leading-[1]">education business
+                    </h1>
+
+                    <p class="text-[#40566D] text-[16px] mt-3">Effortlessly establish and monitor fee payments and
+                        vendor payouts
+                        for educational institutions, tutorials, or online courses, whether you have a website or not.
+                    </p>
+
+                    <div class="flex items-center gap-3 mt-4">
+                        <img src="./images/unacademy-logo.png" alt="logo" class="w-[100px] h-[100px] filter grayscale">
+                        <img src="./images/NIIT.png" alt="logo" class="w-[45px] h-[17px] filter grayscale">
+                        <img src="./images/toppr.png" alt="logo" class="w-[90px] h-[23px] filter grayscale">
+                        <img src="./images/greatlearning.png" alt="logo" class="w-[90px] h-[24px] filter grayscale">
+                        <p class="text-xs font-semibold text-[#40566D]">+21000 others</p>
+                    </div>
+
+                    <button
+                        class="border px-5 py-2 rounded-md bg-blue-600 text-white font-semibold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer mt-3">See
+                        Solutions
+                        <i class="fas fa-arrow-right text-sm"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="tab-content hidden" data-tab="bfsi">
+                <img src="./images/BFSI.png" alt="bfsi" class="w-[100%] h-[100%] object-cover mt-10" />
+
+
+                <div class="absolute top-[300px] left-10 bg-white rounded-md shadow-lg p-7 w-[517px] z-10">
+
+                    <h1 class="text-[30px] text-[#192839] font-mullish font-semibold leading-[1] mb-2">Payments
+                        ecosystems for</h1>
+                    <h1 class="text-[30px] text-[#009E5C] font-mullish font-semibold leading-[1]">financial services
+                    </h1>
+
+                    <p class="text-[#40566D] text-[16px] mt-3">Streamline collection management, automate recurring
+                        payments, and expedite loan disbursement for a comprehensive financial solution.</p>
+
+                    <div class="flex items-center gap-3 mt-4">
+                        <img src="./images/cleartax.png" alt="logo" class="w-[80px] h-[24px] filter grayscale">
+                        <img src="./images/cred.png" alt="logo" class="w-[50px] h-[33px] filter grayscale">
+                        <img src="./images/acko.png" alt="logo" class="w-[70px] h-[18px] filter grayscale">
+                        <img src="./images/paisabazaar-logo.png" alt="logo"
+                            class="w-[100px] h-[100px] filter grayscale">
+                        <p class="text-xs font-semibold text-[#40566D]">+2800 others</p>
+                    </div>
+
+                    <button
+                        class="border px-5 py-2 rounded-md bg-blue-600 text-white font-semibold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer mt-3">See
+                        Solutions
+                        <i class="fas fa-arrow-right text-sm"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="tab-content hidden" data-tab="saas">
+                <img src="./images/SaaS.png" alt="saas" class="w-[100%] h-[100%] object-cover mt-10" />
+
+
+                <div class="absolute top-[300px] left-10 bg-white rounded-md shadow-lg p-7 w-[517px] z-10">
+
+                    <h1 class="text-[30px] text-[#192839] font-mullish font-semibold leading-[1] mb-2">Global Payments
+                        Solutions</h1>
+                    <h1 class="text-[30px] text-[#192839] font-mullish font-semibold leading-[1]">for <span
+                            class="text-[#009E5C] text-[30px] font-mullish font-semibold">IT & SaaS </span>Providers
+                    </h1>
+
+                    <p class="text-[#40566D] text-[16px] mt-3">Seamlessly accept payments in over 100 currencies,
+                        facilitate customizable subscription payments, and efficiently execute vendor payouts.</p>
+
+                    <div class="flex items-center gap-4 mt-14">
+                        <img src="./images/zoho.png" alt="logo" class="w-[70px] h-[24px] filter grayscale">
+                        <img src="./images/shopify.png" alt="logo" class="w-[72px] h-[25px] filter grayscale">
+                        <img src="./images/intuit.png" alt="logo" class="w-[70px] h-[17px] filter grayscale">
+                        <img src="./images/sulekha.png" alt="logo" class="w-[80px] h-[30px] filter grayscale">
+                        <p class="text-xs font-semibold text-[#40566D]">+13,500 others</p>
+                    </div>
+
+                    <button
+                        class="border px-5 py-2 rounded-md bg-blue-600 text-white font-semibold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer mt-7">See
+                        Solutions
+                        <i class="fas fa-arrow-right text-sm"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="tab-content hidden" data-tab="freelancers">
+                <img src="./images/freelancer.png" alt="freelancers" class="w-[100%] h-[100%] object-cover mt-10" />
+
+
+                <div class="absolute top-[300px] left-10 bg-white rounded-md shadow-lg p-7 w-[517px] z-10">
+
+                    <h1 class="text-[30px] text-[#192839] font-mullish font-semibold leading-[1] mb-2">The personalized
+                        payment</h1>
+                    <h1 class="text-[30px] text-[#192839] font-mullish font-semibold leading-[1]">solution for <span
+                            class="text-[#009E5C] text-[30px] font-mullish font-semibold">freelancers </span>
+                    </h1>
+
+                    <p class="text-[#40566D] text-[16px] mt-3">Easily accept payments, even without a website and
+                        without any coding expertise, while also enabling the creation of your personalized, branded
+                        online store.</p>
+
+                    <button
+                        class="border px-5 py-2 rounded-md bg-blue-600 text-white font-semibold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer mt-[100px]">See
+                        Solutions
+                        <i class="fas fa-arrow-right text-sm"></i>
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Product Innovations-->
+    <div class="relative h-[700px] flex flex-col  justify-center">
+        <h3 class="text-[35px] text-[#192839] font-tiktok font-semibold left-[215px]  relative">
+            We have innovated at every instance, creating a disruption.
+        </h3>
+        <div class="w-full relative h-full">
+            <!-- Left Button -->
+            <button
+                class="absolute left-[211px] top-1/2 -translate-y-1/2 z-50 bg-[#2563ff] rounded-full shadow p-3 flex items-center justify-center"
+                id="product-carousel-left">
+                <i class="fas fa-chevron-left text-white"></i>
+            </button>
+
+            
+                <div id="product-innovations"
+                    class="product-innovation-slide absolute inset-0 transition-opacity duration-500 ease-in-out opacity-100 pointer-events-auto z-10">
+                    <div class="flex items-center justify-center h-full gap-4">
+                        <div class="w-[51%] bg-white h-[564px] shadow-lg p-9 rounded-l">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-[#40566D] font-bold">MoneySaver Export Account</h2>
+                                <i class="fa-solid fa-globe text-xl"></i>
+                            </div>
+                            <h2 class="text-[44px] leading-[1.3] font-tiktok font-semibold mt-4 ">
+                                <span class="text-[#2563ff]">Open a virtual account in 200+ countries,</span>
+                                <span class="text-[#192839]"> save up to 50% on international bank transfer charges.
+                                    Receive ACH/SWIFT/SEPA/BACS payments</span>
+                            </h2>
+                            <p class="text-[#40566D] text-[16px] mt-12">Receive international wire transfers with ease
+                                with a smart account</p>
+                            <div class="flex items-center gap-5 mt-5">
+                                <button
+                                    class="border px-5 py-2 rounded-md bg-[#2563ff] text-white font-bold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer">Sign
+                                    Up <i class="fas fa-arrow-right text-sm"></i></button>
+                                <a href="#" class="text-lightblue500 font-bold cursor-pointer">Know More</a>
+                            </div>
+                        </div>
+                        <div class="w-[20%] bg-white h-[564px] shadow-lg rounded-l p-10">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-[#40566D] font-semibold">TURBO UPI</h2>
+                                <i class="fa-solid fa-angles-right text-xs"></i>
+                            </div>
+                            <h4 class="text-[21px] leading-[1.4] font-tiktok font-semibold mt-7">
+                                <span class="text-[#2563ff]">Experience a 5X faster checkout, </span>
+                                <span class="text-[#192839]">achieve a 10% success rate boost, all without any
+                                    redirections to UPI apps.</span>
+                            </h4>
+                            <p class="text-[#40566D] text-[16px] mt-[44%]">Get India's fastest one-step UPI payment
+                                solution for businesses</p>
+                            <div class="flex mt-6 gap-4 items-center ">
+                                <button
+                                    class="border px-4 py-2 rounded-md bg-[#2563ff] text-white font-bold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer">Sign
+                                    Up <i class="fas fa-arrow-right text-sm"></i></button>
+                                <a href="#" class="text-lightblue500 font-bold cursor-pointer">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="product-innovations"
+                    class="product-innovation-slide absolute inset-0 transition-opacity duration-500 ease-in-out opacity-0 pointer-events-none z-0">
+                    <div class="flex items-center justify-center h-full gap-4">
+                        <div class="w-[20%] bg-white h-[564px] shadow-lg p-10 rounded-l">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-[#40566D] font-semibold">Line of Credit</h2>
+                                <i class="fa-solid fa-angles-right text-xs"></i>
+                            </div>
+                            <h4 class="text-[22px] leading-[1.4] font-tiktok font-semibold mt-7">
+                                <span class="text-[#2563ff]">Get a ₹50L collateral- </span>
+                                <span class="text-[#2563ff]">free credit line</span>
+                                <span class="text-[#192839]">with low 1.5% monthly interest, and no pre-closure
+                                    fees.</span>
+                            </h4>
+                            <p class="text-[#40566D] text-[17px] mt-[54%]">Tackle cash flow like a pro with a flexible
+                                credit line for new-age businesses</p>
+                            <div class="flex mt-[14%]  gap-4 items-center ">
+                                <button
+                                    class="border px-4 py-2 rounded-md bg-[#2563ff] text-white font-bold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer">Sign
+                                    Up <i class="fas fa-arrow-right text-sm"></i></button>
+                                <a href="#" class="text-lightblue500 font-bold cursor-pointer">Know More</a>
+                            </div>
+                        </div>
+                        <div class="w-[51%] bg-white h-[564px] shadow-lg rounded-l p-10">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-[#40566D] font-bold">Magic Checkout</h2>
+                                <i class="fa-solid fa-cart-shopping text-xs"></i>
+                            </div>
+                            <h2 class="text-[44px] leading-[1.3] font-tiktok font-semibold mt-4 ">
+                                <span class="text-[#2563ff]">Witness a 40% increase in </span>
+                                <span class="text-[#2563ff]">conversions,</span>
+                                <span class="text-[#192839]">enjoy a 5X quicker checkout process, and reduce RTOs by
+                                    50%.</span>
+                            </h2>
+                            <p class="text-[#40566D] text-[16px] mt-[117px]">Grow your e-commerce business with a
+                                made-for-D2C checkout experience</p>
+                            <div class="flex items-center gap-5 mt-5">
+                                <button
+                                    class="border px-5 py-2 rounded-md bg-[#2563ff] text-white font-bold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer">Sign
+                                    Up <i class="fas fa-arrow-right text-sm"></i></button>
+                                <a href="#" class="text-lightblue500 font-bold cursor-pointer">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="product-innovations"
+                    class="product-innovation-slide absolute inset-0 transition-opacity duration-500 ease-in-out opacity-0 pointer-events-none z-0">
+                    <div class="flex items-center justify-center h-full gap-4">
+                        <div class="w-[51%] bg-white h-[564px] shadow-lg p-9 rounded-l">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-[#40566D] font-bold">Optimizer</h2>
+                                <i class="fa-solid fa-code-branch"></i>
+                            </div>
+                            <h2 class="text-[44px] leading-[1.3] font-tiktok font-semibold mt-4 ">
+                                <span class="text-[#2563ff]">Utilise 15+ payment gateways for all </span>
+                                <span class="text-[#2563ff]">Aggregators,</span>
+                                <span class="text-[#192839]"> improve success rates by 10% with zero downtime, and cut
+                                    charges/fees by 15-30%.</span>
+                            </h2>
+                            <p class="text-[#40566D] text-[16px] mt-[114px]">Manage multiple payment gateways with an
+                                AI-powered infinity router</p>
+                            <div class="flex items-center gap-5 mt-5">
+                                <button
+                                    class="border px-5 py-2 rounded-md bg-[#2563ff] text-white font-bold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer">Sign
+                                    Up <i class="fas fa-arrow-right text-sm"></i></button>
+                                <a href="#" class="text-lightblue500 font-bold cursor-pointer">Know More</a>
+                            </div>
+                        </div>
+                        <div class="w-[20%] bg-white h-[564px] shadow-lg rounded-l p-10">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-[#40566D] font-semibold">Payouts Pro</h2>
+                                <i class="fa-solid fa-code-fork text-xs"></i>
+                            </div>
+                            <h4 class="text-[21px] leading-[1.4] font-tiktok font-semibold mt-7">
+                                <span class="text-[#2563ff]">Automate real-time routing across multiple accounts,
+                                </span>
+                                <span class="text-[#192839]">and achieve 99.9% success, prevent bank downtime
+                                    disruptions.</span>
+                            </h4>
+                            <p class="text-[#40566D] text-[16px] mt-[44%]">Achieve unbeatable payouts success rates with
+                                our dynamic multi-bank routing</p>
+                            <div class="flex mt-6 gap-4 items-center ">
+                                <button
+                                    class="border px-4 py-2 rounded-md bg-[#2563ff] text-white font-bold font-mullish transition-all duration-200 hover:bg-blue-600 text-xm flex items-center gap-3 whitespace-nowrap cursor-pointer">Sign
+                                    Up <i class="fas fa-arrow-right text-sm"></i></button>
+                                <a href="#" class="text-lightblue500 font-bold cursor-pointer">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <!-- Right Button -->
+            <button
+                class="absolute right-[211px] top-1/2 -translate-y-1/2 z-50 bg-[#2563ff] rounded-full shadow p-3 flex items-center justify-center"
+                id="product-carousel-right">
+                <i class="fas fa-chevron-right text-white"></i>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
