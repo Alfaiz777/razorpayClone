@@ -54,13 +54,16 @@ document.addEventListener("DOMContentLoaded", () => {
   let productCurrent = 0;
 
   function showProductSlide(index) {
-    productSlides.forEach((slide, i) => {
-      slide.classList.toggle('opacity-100', i === index);
-      slide.classList.toggle('opacity-0', i !== index);
-      slide.classList.toggle('pointer-events-auto', i === index);
-      slide.classList.toggle('pointer-events-none', i !== index);
-    });
-  }
+  productSlides.forEach((slide, i) => {
+    if (i === index) {
+      slide.classList.remove('opacity-0');
+      slide.classList.add('opacity-100');
+    } else {
+      slide.classList.remove('opacity-100');
+      slide.classList.add('opacity-0');
+    }
+  });
+}
 
   leftBtn.addEventListener('click', () => {
     productCurrent = Math.max(0, productCurrent - 1);
